@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apply to Join the Team | CoCoMokio</title>
+        <link rel="shortcut icon" href="../Images/CMC logo.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="../DarkStyles.css">
+        <script src="../scripts/site.js" defer></script>
+        <script src="../scripts/apply.js" defer></script>
+    </head>
+    <body>
+        <div data-shared-header data-title="Applications" data-title-class="page-title" data-title-href="https://www.cocomokio.com/pages/apply.html" data-account-links></div>
+        <main class="application-page">
+            <section class="application-hero">
+                <span class="application-eyebrow">MOKIO STAFF APPLICATIONS</span>
+                <h2>Find your place on the team.</h2>
+                <p>Choose a position and server, tell us a little about yourself, and send your application to the team.</p>
+                <div class="application-steps" aria-label="Application steps">
+                    <span data-step-indicator="0"><b>01</b> Pick a role</span>
+                    <span data-step-indicator="1"><b>02</b> About you</span>
+                    <span data-step-indicator="2"><b>03</b> Your application</span>
+                </div>
+            </section>
+
+            <form class="application-form" data-application-form novalidate>
+                <section class="application-section" data-application-step aria-labelledby="position-heading">
+                    <div class="application-section-heading">
+                        <span class="application-step-number">01</span>
+                        <div>
+                            <h2 id="position-heading">Which position interests you?</h2>
+                            <p>Select one position to apply for.</p>
+                        </div>
+                    </div>
+                    <fieldset class="position-grid">
+                        <legend class="sr-only">Choose a position</legend>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Helper" required>
+                            <span class="position-icon" aria-hidden="true">✦</span>
+                            <span class="position-name">Helper</span>
+                            <span class="position-description">Welcome players and answer questions.</span>
+                        </label>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Moderator" required>
+                            <span class="position-icon" aria-hidden="true">🛡</span>
+                            <span class="position-name">Moderator</span>
+                            <span class="position-description">Help keep the community safe and monitor chat.</span>
+                        </label>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Builder" required>
+                            <span class="position-icon" aria-hidden="true">⌂</span>
+                            <span class="position-name">Builder</span>
+                            <span class="position-description">Create places and builds for the server.</span>
+                        </label>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Admin" required>
+                            <span class="position-icon" aria-hidden="true">⚙</span>
+                            <span class="position-name">Admin</span>
+                            <span class="position-description">Monitor hacking answer tickets and help maintain the server.</span>
+                        </label>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Media" required>
+                            <span class="position-icon" aria-hidden="true">▶</span>
+                            <span class="position-name">Media Creator</span>
+                            <span class="position-description">Make videos, streams, or make content for server and community.</span>
+                        </label>
+                        <label class="position-option">
+                            <input type="radio" name="position" value="Developer" required>
+                            <span class="position-icon" aria-hidden="true">＋</span>
+                            <span class="position-name">Developer</span>
+                            <span class="position-description">Develop plugins, mods or other tools for the server.</span>
+                        </label>
+                    </fieldset>
+                    <div class="application-field application-server-field">
+                        <label for="application-server">Which server are you applying for? <span aria-hidden="true">*</span></label>
+                        <select id="application-server" name="server" required>
+                            <option value="" selected disabled>Select a server</option>
+                            <option value="Turtbox">Turtbox</option>
+                            <option value="Defiant SMP">Defiant SMP</option>
+                            <option value="All servers">All servers</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="application-section" data-application-step aria-labelledby="about-heading" hidden>
+                    <div class="application-section-heading">
+                        <span class="application-step-number">02</span>
+                        <div>
+                            <h2 id="about-heading">A little about you</h2>
+                            <p>So we know who we're talking to.</p>
+                        </div>
+                    </div>
+                    <div class="application-fields">
+                        <div class="application-field">
+                            <label for="applicant-name">What do we call you? <span aria-hidden="true">*</span></label>
+                            <input id="applicant-name" name="name" autocomplete="name" maxlength="80" required>
+                        </div>
+                        <div class="application-field">
+                            <label for="minecraft-name">Minecraft username <span aria-hidden="true">*</span></label>
+                            <input id="minecraft-name" name="minecraft username" autocomplete="off" maxlength="32" required>
+                        </div>
+                        <div class="application-field">
+                            <label for="discord-name">Discord username <span class="optional-label">Optional</span></label>
+                            <input id="discord-name" name="discord username" autocomplete="off" maxlength="80">
+                        </div>
+                        <div class="application-field">
+                            <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+                            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="application-section" data-application-step aria-labelledby="questions-heading" hidden>
+                    <div class="application-section-heading">
+                        <span class="application-step-number">03</span>
+                        <div>
+                            <h2 id="questions-heading">Your application</h2>
+                            <p>Thoughtful answers help us get to know you. Please be yourself.</p>
+                        </div>
+                    </div>
+                    <fieldset class="application-question-set" data-standard-questions>
+                        <legend class="sr-only">Staff position questions</legend>
+                        <div class="application-field">
+                            <label for="motivation">Why are you interested in this position? <span aria-hidden="true">*</span></label>
+                            <textarea id="motivation" name="why this position" rows="4" maxlength="1500" required placeholder="What interests you about this role and our community?"></textarea>
+                        </div>
+                        <div class="application-field">
+                            <label for="experience">What experience or skills would you bring? <span aria-hidden="true">*</span></label>
+                            <textarea id="experience" name="experience and skills" rows="4" maxlength="1500" required placeholder="Share relevant experience, skills, or projects—even if they're from outside Minecraft."></textarea>
+                        </div>
+                        <div class="application-field" data-staff-history>
+                            <label for="staff-history">Have you ever been staff or helped on a server before? <span aria-hidden="true">*</span></label>
+                            <select id="staff-history" name="previous staff experience" required>
+                                <option value="" selected disabled>Select an answer</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="application-field" data-staff-history-details hidden>
+                            <label for="staff-history-details">Which server was it, and what was your role? <span aria-hidden="true">*</span></label>
+                            <textarea id="staff-history-details" name="previous staff details" rows="3" maxlength="1000" required disabled placeholder="List the server and describe what you did there."></textarea>
+                        </div>
+                        <fieldset class="application-question-set" data-role-questions="Moderator" hidden disabled>
+                            <legend class="sr-only">Moderator questions</legend>
+                            <div class="application-field">
+                                <label for="moderator-spam">How would you handle someone spamming in chat because they got scammed when it is not against the rules? <span aria-hidden="true">*</span></label>
+                                <textarea id="moderator-spam" name="moderator scam spam response" rows="4" maxlength="1500" required></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="moderator-spectator">What would you do if you had access to spectator and /tp and saw a player flying to try to get to their loot after dying? <span aria-hidden="true">*</span></label>
+                                <textarea id="moderator-spectator" name="moderator spectator response" rows="4" maxlength="1500" required></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="application-question-set" data-role-questions="Developer" hidden disabled>
+                            <legend class="sr-only">Developer questions</legend>
+                            <fieldset class="application-language-list">
+                                <legend>Which programming languages do you know? Select all that apply. <span aria-hidden="true">*</span></legend>
+                                <div class="application-choice-grid">
+                                    <label><input type="checkbox" name="development languages" value="Java" data-developer-language> Java</label>
+                                    <label><input type="checkbox" name="development languages" value="JavaScript/TypeScript" data-developer-language> JavaScript/TypeScript</label>
+                                    <label><input type="checkbox" name="development languages" value="Python" data-developer-language> Python</label>
+                                    <label><input type="checkbox" name="development languages" value="C#" data-developer-language> C#</label>
+                                    <label><input type="checkbox" name="development languages" value="C++" data-developer-language> C++</label>
+                                    <label><input type="checkbox" name="development languages" value="Kotlin" data-developer-language> Kotlin</label>
+                                    <label><input type="checkbox" name="development languages" value="Lua" data-developer-language> Lua</label>
+                                    <label><input type="checkbox" name="development languages" value="Other" data-developer-language> Other</label>
+                                </div>
+                                <small class="application-hint" data-language-hint aria-live="polite">Select at least one language.</small>
+                                <div class="application-field" data-language-other hidden>
+                                    <label for="developer-language-other">Which other language? <span aria-hidden="true">*</span></label>
+                                    <input id="developer-language-other" name="other development language" maxlength="100" required disabled>
+                                </div>
+                            </fieldset>
+                            <div class="application-field">
+                                <label for="developer-projects">What projects have you worked on before? <span aria-hidden="true">*</span></label>
+                                <textarea id="developer-projects" name="development projects" rows="4" maxlength="1500" required placeholder="What did each project do, and what parts did you work on?"></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="developer-learning">How did you learn to code? <span aria-hidden="true">*</span></label>
+                                <textarea id="developer-learning" name="development learning" rows="3" maxlength="1000" required></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="developer-speed">How fast can you code? Give a rough example of a simple project and how long it would take. <span aria-hidden="true">*</span></label>
+                                <textarea id="developer-speed" name="development speed" rows="3" maxlength="1000" required placeholder="For example, “I can make a random number generator in about 10 minutes.”"></textarea>
+                            </div>
+                        </fieldset>
+                        <fieldset class="application-question-set" data-role-questions="Builder" hidden disabled>
+                            <legend class="sr-only">Builder questions</legend>
+                            <div class="application-field">
+                                <label for="builder-types">What kinds of builds have you made in the past? <span aria-hidden="true">*</span></label>
+                                <textarea id="builder-types" name="builder types" rows="3" maxlength="1200" required></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="builder-size">How big are the builds you usually make? <span aria-hidden="true">*</span></label>
+                                <textarea id="builder-size" name="builder size" rows="3" maxlength="800" required placeholder="You can estimate in blocks, plots, or build time."></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="builder-process">Do you build from scratch, follow tutorials, or use both approaches? Tell us more. <span aria-hidden="true">*</span></label>
+                                <textarea id="builder-process" name="builder process" rows="3" maxlength="1000" required></textarea>
+                            </div>
+                            <div class="application-field">
+                                <label for="builder-images">Upload 2–20 photos of your builds <span aria-hidden="true">*</span></label>
+                                <input id="builder-images" name="builder images" type="file" accept="image/png,image/jpeg,.png,.jpg,.jpeg" multiple required data-builder-images>
+                                <small class="application-hint" data-builder-images-hint aria-live="polite">PNG or JPG/JPEG images only. Select at least 2 and no more than 20. When your email draft opens, attach these files manually; the website cannot attach files automatically.</small>
+                            </div>
+                        </fieldset>
+                        <div class="application-field" data-generic-scenario>
+                            <label for="scenario"><span data-scenario-question>What would you do in a challenging situation?</span> <span aria-hidden="true">*</span></label>
+                            <textarea id="scenario" name="role scenario" rows="4" maxlength="1500" required placeholder="Describe how you would handle a challenge related to the role you selected."></textarea>
+                            <small class="application-hint" data-scenario-hint>Select a position above to see a question tailored to that role.</small>
+                        </div>
+                        <div class="application-fields">
+                            <div class="application-field">
+                                <label for="availability">How much time can you usually contribute each week? <span aria-hidden="true">*</span></label>
+                                <select id="availability" name="weekly availability" required>
+                                    <option value="" selected disabled>Select your availability</option>
+                                    <option>1–3 hours</option>
+                                    <option>4–7 hours</option>
+                                    <option>8–12 hours</option>
+                                    <option>12+ hours</option>
+                                    <option>It varies</option>
+                                </select>
+                            </div>
+                            <div class="application-field" data-availability-details hidden>
+                                <label for="availability-explanation">Please explain your usual availability. <span aria-hidden="true">*</span></label>
+                                <input id="availability-explanation" name="availability explanation" maxlength="300" required placeholder="For example, more time during school breaks">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="application-question-set" data-media-questions hidden disabled>
+                        <legend class="sr-only">Media creator questions</legend>
+                        <div class="application-field">
+                            <label for="media-interest">Why are you interested in creating content for this server? <span aria-hidden="true">*</span></label>
+                            <textarea id="media-interest" name="media interest" rows="3" maxlength="1500" required placeholder="What would you enjoy sharing with your audience?"></textarea>
+                        </div>
+                        <fieldset class="application-platform-list">
+                            <legend>Which platforms do you create content on? Select all that apply. <span aria-hidden="true">*</span></legend>
+                            <p class="application-hint">You only need to meet the minimum on one platform: 15 average live viewers on Twitch or TikTok, or 30 average views per YouTube video. For each platform you select, share your link and average so we can review your channels.</p>
+                            <div class="application-platform-option" data-platform-option="Twitch">
+                                <label class="application-platform-choice">
+                                    <input type="checkbox" name="media platform" value="Twitch" data-media-platform>
+                                    <span>Twitch</span>
+                                </label>
+                                <div data-platform-fields hidden>
+                                    <div class="application-field">
+                                        <label for="media-twitch-audience">Average live viewers on Twitch</label>
+                                        <input id="media-twitch-audience" name="average audience twitch" type="number" min="0" step="any" disabled placeholder="Minimum to qualify: 15">
+                                    </div>
+                                    <div class="application-field">
+                                        <label for="media-twitch-channel">Twitch channel link</label>
+                                        <input id="media-twitch-channel" name="media channel twitch" type="url" maxlength="500" disabled placeholder="https://">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="application-platform-option" data-platform-option="TikTok">
+                                <label class="application-platform-choice">
+                                    <input type="checkbox" name="media platform" value="TikTok" data-media-platform>
+                                    <span>TikTok</span>
+                                </label>
+                                <div data-platform-fields hidden>
+                                    <div class="application-field">
+                                        <label for="media-tiktok-audience">Average live viewers on TikTok</label>
+                                        <input id="media-tiktok-audience" name="average audience tiktok" type="number" min="0" step="any" disabled placeholder="Minimum to qualify: 15">
+                                    </div>
+                                    <div class="application-field">
+                                        <label for="media-tiktok-channel">TikTok profile link</label>
+                                        <input id="media-tiktok-channel" name="media channel tiktok" type="url" maxlength="500" disabled placeholder="https://">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="application-platform-option" data-platform-option="YouTube">
+                                <label class="application-platform-choice">
+                                    <input type="checkbox" name="media platform" value="YouTube" data-media-platform>
+                                    <span>YouTube</span>
+                                </label>
+                                <div data-platform-fields hidden>
+                                    <div class="application-field">
+                                        <label for="media-youtube-audience">Average views per YouTube video</label>
+                                        <input id="media-youtube-audience" name="average audience youtube" type="number" min="0" step="any" disabled placeholder="Minimum to qualify: 30">
+                                    </div>
+                                    <div class="application-field">
+                                        <label for="media-youtube-channel">YouTube channel link</label>
+                                        <input id="media-youtube-channel" name="media channel youtube" type="url" maxlength="500" disabled placeholder="https://">
+                                    </div>
+                                </div>
+                            </div>
+                            <small class="application-hint" data-platform-eligibility aria-live="polite">Select at least one platform and enter its average audience and link.</small>
+                        </fieldset>
+                        <div class="application-field application-confirmation">
+                            <label>
+                                <input type="checkbox" name="media hours confirmation" value="Confirmed" required>
+                                I can stream or create live content for at least 10 hours each week.
+                            </label>
+                        </div>
+                        <div class="application-field">
+                            <label for="media-schedule">What days or times would you usually stream? <span aria-hidden="true">*</span></label>
+                            <textarea id="media-schedule" name="media schedule" rows="3" maxlength="800" required placeholder="Include your usual schedule in your time zone."></textarea>
+                        </div>
+                        <div class="application-field">
+                            <label for="media-content">What content would you create, and how would you keep it welcoming and accurate? <span aria-hidden="true">*</span></label>
+                            <textarea id="media-content" name="media content plan" rows="4" maxlength="1500" required placeholder="Tell us about your content style and how you would represent the server and community."></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="application-field">
+                        <label for="timezone">Time zone <span aria-hidden="true">*</span></label>
+                        <input id="timezone" name="time zone" list="time-zone-options" maxlength="80" required autocomplete="off" placeholder="Type a city or time zone to filter">
+                        <datalist id="time-zone-options">
+                            <option value="UTC">
+                            <option value="America/Anchorage">
+                            <option value="America/Argentina/Buenos_Aires">
+                            <option value="America/Bogota">
+                            <option value="America/Chicago">
+                            <option value="America/Denver">
+                            <option value="America/Detroit">
+                            <option value="America/Edmonton">
+                            <option value="America/Halifax">
+                            <option value="America/Los_Angeles">
+                            <option value="America/Mexico_City">
+                            <option value="America/New_York">
+                            <option value="America/Phoenix">
+                            <option value="America/Sao_Paulo">
+                            <option value="America/St_Johns">
+                            <option value="America/Toronto">
+                            <option value="America/Vancouver">
+                            <option value="America/Winnipeg">
+                            <option value="Asia/Bangkok">
+                            <option value="Asia/Dubai">
+                            <option value="Asia/Hong_Kong">
+                            <option value="Asia/Jakarta">
+                            <option value="Asia/Jerusalem">
+                            <option value="Asia/Karachi">
+                            <option value="Asia/Kolkata">
+                            <option value="Asia/Manila">
+                            <option value="Asia/Seoul">
+                            <option value="Asia/Shanghai">
+                            <option value="Asia/Singapore">
+                            <option value="Asia/Tokyo">
+                            <option value="Australia/Adelaide">
+                            <option value="Australia/Brisbane">
+                            <option value="Australia/Melbourne">
+                            <option value="Australia/Perth">
+                            <option value="Australia/Sydney">
+                            <option value="Europe/Amsterdam">
+                            <option value="Europe/Athens">
+                            <option value="Europe/Berlin">
+                            <option value="Europe/Dublin">
+                            <option value="Europe/Helsinki">
+                            <option value="Europe/Istanbul">
+                            <option value="Europe/London">
+                            <option value="Europe/Madrid">
+                            <option value="Europe/Moscow">
+                            <option value="Europe/Paris">
+                            <option value="Europe/Rome">
+                            <option value="Europe/Stockholm">
+                            <option value="Pacific/Auckland">
+                            <option value="Pacific/Honolulu">
+                            <option value="Pacific/Guam">
+                        </datalist>
+                        <small class="application-hint">Start typing to filter the time-zone suggestions, or enter your time zone.</small>
+                    </div>
+                    <div class="application-field">
+                        <label for="extra">Anything else you'd like us to know? <span class="optional-label">Optional</span></label>
+                        <textarea id="extra" name="additional information" rows="3" maxlength="1500" placeholder="Links to builds, channels, or other relevant work are welcome."></textarea>
+                    </div>
+                </section>
+
+                <div class="application-submit" data-application-submit hidden>
+                    <p>Your answers will open as a draft email to the CoCoMokio team. Review it and press Send to submit.</p>
+                    <button type="submit">Review and email application <span aria-hidden="true">→</span></button>
+                    <p class="application-status" data-application-status role="status" aria-live="polite"></p>
+                </div>
+            </form>
+        </main>
+        <div data-shared-footer></div>
+    </body>
+</html>
