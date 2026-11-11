@@ -29,7 +29,7 @@
         <span class="avatar" aria-hidden="true">${esc(name[0].toUpperCase())}</span>
         <h2>Hi, ${esc(name)}!</h2>
         <p class="lead">You're signed in. Your username will be filled in at checkout.</p>
-        <a class="btn wide" href="https://store.cocomokio.com/">Go to the store</a>
+        <a class="btn wide" href="${(window.Mokio && window.Mokio.siteUrl) ? window.Mokio.siteUrl("store", "/") : "https://store.cocomokio.com/"}">Go to the store</a>
         <button class="btn-secondary wide" data-signout>Sign out</button>`;
 
     const draw = () => {
